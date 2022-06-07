@@ -1,6 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+
+/*
+When a get request comes from app.js ,
+render the page using index.ejs file
+*/
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home Page' });
 });
