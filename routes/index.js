@@ -1,28 +1,38 @@
 var express = require('express');
 var router = express.Router();
 
-
-/*
-When a get request comes from app.js ,
-render the page using index.ejs file
-*/
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home Page' });
+/* GET home page. */
+router.get('/', (req, res, next) => {
+  res.render('index', {
+    title: 'Home'
+  });
 });
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home Page' });
+router.get('/home', (req, res, next) => {
+  res.render('index', {
+    title: 'Home'
+  });
 });
 
-/* GET contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact Page' });
+/* GET About page. */
+router.get('/about', function (req, res, next) {
+  res.render('about', { title: 'About' });
 });
 
-/* GET product page. */
-router.get('/product', function(req, res, next) {
-  res.render('index', { title: 'Product Page' });
+/* GET Projects page. */
+router.get('/projects', function (req, res, next) {
+  res.render('projects', { title: 'Projects' });
+});
+
+/* GET Services page. */
+router.get('/services', function (req, res, next) {
+  res.render('services', { title: 'Services' });
+});
+
+/* GET Contacts me  page. */
+router.get('/contacts', function (req, res, next) {
+  res.render('contactme', { title: 'Contacts'});
 });
 
 module.exports = router;

@@ -1,19 +1,28 @@
-<% include partials/header.ejs%>
+<%- include partials/header -%>
 
-<% include partials/main_nav.ejs%>
+   <!--Content Page-->
+   <section class="bg-light text-dark p-5 text-center text-sm-start" style="padding:20% ;">
+      <div class="container">
+         <div class="d-sm-flex align-items-center justify-content-between">
+            <img class="img-fluid d-none d-sm-block" src="/images/p_image.jpg" alt="" width="250" height="250">
+            <div class="container">
+            <div>
+               <h1>Vishnu Rajendran Pillai</h1>
+               <p>
+                  A result-oriented dynamic IT professional with 5 years of experience working extensively on API and user interface testing. Being a test automation engineer, I get to play the role of a tester and developer at the same time.
+               </p>
+                  <p class="lead my-4">
+                  I am a big fan of Agile ways of creating and changing things. I thrive in rapidly growing, innovative organizations. I am passionate about new technologies, tools, especially on the testing front. I always strive to bring 100% to the work that I do, and my goal as a test automation engineer is to deliver quality, bug-free, products to the customer on time. 
+                  </p>
+               <div class="col col-xs-12 col-md-4 mr-4">
+                  <a type="button" class="btn btn-primary btn-lg" href="/about">About me</a>
+              </div>
+            </div>
+         </div>      
+         </div>
+      </div>
+   </section>
+   <!--Content Page-->
+   </div>
 
-
-  <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class ="display-4">Welcome to the <%= title %></h1>
-    </div>>
-  </main>
-
-  <% include partials/bottom_nav.ejs %>
-
-
-  <% include partials/footer.ejs %>
-
-
-
+   <%- include partials/footer -%>

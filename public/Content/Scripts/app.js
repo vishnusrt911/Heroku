@@ -1,13 +1,8 @@
-// IIFE Immediately Invoked Function Expression for the client side
-//This app.js file is called using 
 
-console.log("Test Comment....");
 (function(){
-
-    function Start()
-    {
-        console.log("app started....");
+    function start(){
+        console.log('App started');
     }
 
-    window.addEventListener('DOMContentLoaded',Start);
-})(); 
+    window.addEventListener('DOMContentLoaded',start);
+})();

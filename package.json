@@ -1,13 +1,9 @@
 {
-  "name": "express",
-  "version": "0.0.1",
+  "name": "portfolio",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
-  },
-  "engines": {
-    "node": "^16.15.0",
-    "npm": "^8.5.5"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
@@ -18,17 +14,16 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
-    "mongoose": "^6.3.5",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "samle app comp229",
+  "description": "my portfolio",
   "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vishnusrt911/Heroku.git"
   },
-  "author": "vishnu",
+  "author": "Vishnu Rajendran Pillai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vishnusrt911/Heroku/issues"
