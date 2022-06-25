@@ -1,0 +1,30 @@
+<%- include partials/header -%>
+    <div class="container-fluid bg-white" style=" margin: 0%; padding: 0%; ">
+        <div style="color: black">
+            <h1>
+                <%=title%>
+            </h1>
+        </div>
+        <div class="row " style="padding: 1%; margin-left: 4%;">
+            <div class="col col-lg-4 ">
+                <h3>
+                    <%=title%>
+                </h3>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">User Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name ="username" placeholder="first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Password</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name ="password" placeholder="password">
+                    </div>
+                    <button type="Submit" class="btn btn-success text-white">Login</button>
+                </form>
+                <a href="/login/register">Register here</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <%- include partials/footer -%>

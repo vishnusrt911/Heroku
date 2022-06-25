@@ -1,0 +1,34 @@
+<%- include ../partials/header -%>
+
+    <div class="container-fluid bg-white" style=" margin: 0%; padding: 0%; ">
+        <div style="color: black">
+            <h1><%=title%></h1>
+            </div>
+        <div class="row " style="padding: 1%; margin-left: 4%;">           
+            <div class="col col-lg-4 ">
+                <h3><%=title%></h3>
+                <form action=""   method="post" >
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Contact Name</label>
+                        <input type="text" class="form-control" name="contactName" id="exampleFormControlInput1"
+                            placeholder="contact name" value="<%= list.contactName %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Contact Number</label>
+                        <input type="text" class="form-control" name="contactNumber" id="exampleFormControlInput1"
+                            placeholder="contact number" value="<%= list.contactNumber %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Contact EmailAddress</label>
+                        <input type="email" class="form-control" name="contactEmailAddress" id="exampleFormControlInput1"
+                            placeholder="contact email address" value="<%= list.contactEmail %>">
+                    </div>
+                    <button type="Submit" class="btn btn-success text-white">Update</button>
+                    <a href="/business_contact_list" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <%- include ../partials/footer -%>

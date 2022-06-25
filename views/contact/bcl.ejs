@@ -1,0 +1,56 @@
+<%- include ../partials/header -%>
+
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <h3>Business Contact List </h3>
+                <br>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Contact Name</th>
+                                <th class="text-center">Contact Number</th>
+                                <th class="text-center">Contact Email Address</th>
+                                <th class="text-center">Update</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Template Row -->
+                            <% for (let count=0; count < list.length; count++) { %>
+                                <tr>
+                                    <td>
+                                        <%= list[count].contactName %>
+                                    </td>
+                                    <td class="text-center">
+                                        <%= list[count].contactNumber %>
+                                    </td>
+                                    <td class="text-center">
+                                        <%= list[count].contactEmail %>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="business_contact_list/update/<%= list[count]._id %>"
+                                            class="btn btn-primary btn-sm">Update</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="business_contact_list/delete/<%= list[count]._id %>"
+                                            class="btn btn-danger btn-sm">Delete</a>
+                                    </td>
+                                </tr>
+                                <% } %>
+                        </tbody>
+                    </table>
+                </div>
+                <li class="nav-item">
+                    <a href="/login/logout" class="nav-link">LogOut</a>
+                </li>
+                <div class="col-md-offset-1 col-md-10 text-center">
+                    <ul class="pagination pagination-lg pager" id="myPager"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <%- include ../partials/footer -%>

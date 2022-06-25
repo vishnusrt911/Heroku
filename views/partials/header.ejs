@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title><%= title %></title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!--Adding external style sheets-->
-    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
-    <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
-  <script src='main.js'></script>
+  <!--Adding external style sheets-->
+  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+  <link rel='stylesheet' href='/content/app.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
+
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1 fixed-top">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="/">
+      <img src="/images/icon.png" style="width:50px;">
+    </a>
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Routing into different pages when a Navbar item got clicked -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="/projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contacts" class="nav-link">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="/login" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
